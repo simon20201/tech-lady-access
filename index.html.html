@@ -1,0 +1,53 @@
+```html
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACCESS REQUEST</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="matrix"></canvas>
+
+<div class="container">
+
+  <div class="webcam">
+    <div class="scan-line"></div>
+    <p>SCANNING TECH LADY...</p>
+  </div>
+
+  <div id="loading">Initializing...</div>
+
+  <div id="terminal"></div>
+
+  <div id="countdown"></div>
+
+  <div class="buttons hidden" id="buttons">
+
+    <button class="allow" onclick="grantAccess()">
+      GRANT ACCESS
+    </button>
+
+    <button class="deny" id="denyBtn">
+      DENY
+    </button>
+
+  </div>
+
+  <div id="finalMessage"></div>
+
+</div>
+
+<audio id="beep" src="beep.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
